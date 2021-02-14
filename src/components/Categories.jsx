@@ -1,9 +1,10 @@
 import React, { Children } from 'react';
 import '../assets/styles/components/Categories.scss';
-const Categories = ( { children , title}) => (
+
+const Categories = ({ title, children }) => (
     <div className="categories">
-         <h3 class="categories__title">{title}</h3>
-    {children}
+         <h3 className="categories__title">{title}</h3>
+        {children}
     </div>
 );
 
