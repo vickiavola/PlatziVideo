@@ -19,6 +19,9 @@ const App = () => {
             {initialState.mylist.length > 0 &&
                 <Categories title = "Mi lista">
                      <Carousel >
+                     {initialState.mylist.map (item =>
+                        <CarouselItem key={item.id} {...item} />
+                    )}
                         <CarouselItem />
                       </Carousel>
                   </Categories>
@@ -34,6 +37,9 @@ const App = () => {
                     
             <Categories title = "Originales de Platzi Video">
                 <Carousel>
+                {initialState.originals.map (item =>
+                        <CarouselItem key={item.id} {...item} />
+                    )}
                     <CarouselItem />
                 </Carousel>
             </Categories>
