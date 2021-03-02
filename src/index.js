@@ -6,7 +6,7 @@ import reducer from './reducers';
 import App from './routes/App';
 
 const initialState = {
-        "user" : {},
+        "user": {},
         "playing": {},
         "myList": [],
         "trends": [
@@ -177,4 +177,5 @@ ReactDOM.render(
     <Provider store={store}>
         <App /> 
     </Provider>,
-document.getElementById('app'));
+document.getElementById('app')
+);

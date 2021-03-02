@@ -6,6 +6,6 @@ const Categories = ({ title, children }) => (
          <h3 className="categories__title">{title}</h3>
         {children}
     </div>
-);
+    );
 
 export default Categories;
